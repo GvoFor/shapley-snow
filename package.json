@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "author": { "name": "Pumnia Mykhailo" },
+  "dependencies": {
+    "mz-math": "^3.0.26",
+    "prettytable.js": "^1.0.1"
+  }
+}
