@@ -44,8 +44,8 @@ const isOptimalSolution = (matrix, x, y, value) => (
   x && y &&
   x.every(isProbability) &&
   y.every(isProbability) &&
-  zeroIndices(x).map(i => vDotProduct(y, matrix[i])).every(v => v < value) &&
-  zeroIndices(y).map(i => vDotProduct(x, mGetColumn(matrix, i))).every(v => v > value)
+  zeroIndices(x).map(i => vDotProduct(y, matrix[i])).every(v => v <= value) &&
+  zeroIndices(y).map(i => vDotProduct(x, mGetColumn(matrix, i))).every(v => v >= value)
 );
 
 const GREEN_TEXT_MODE = '\x1b[32m%s\x1b[0m';
